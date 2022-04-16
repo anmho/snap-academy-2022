@@ -1,8 +1,15 @@
+import "../styles/Home.css";
+
 function Home() {
   return (
     <div>
-      <h1>Home</h1>
-      <a href="/about">About</a>
+      <div className="home-image">
+        <div className="container">
+          <h1 className="greeting-text">ORDER DELIVERY</h1>
+          <div></div>
+        </div>
+      </div>
+      
     </div>
   );
 }

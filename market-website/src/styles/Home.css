@@ -1,0 +1,21 @@
+.home-image {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/markus-winkler-zRbSeCQbl8k-unsplash.jpg);
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.greeting-text {
+  display: flex;
+  justify-content: center;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  font-size: 100px;
+  color: white;
+}
