@@ -4,7 +4,7 @@
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../images/markus-winkler-zRbSeCQbl8k-unsplash.jpg);
+    url(/src/images/markus-winkler-zRbSeCQbl8k-unsplash.jpg);
   background-color: red;
   display: flex;
   flex-direction: column;
@@ -18,4 +18,14 @@
   font-weight: bold;
   font-size: 100px;
   color: white;
+}
+
+.order-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.order-buttons a {
+  margin: 0.5rem;
 }

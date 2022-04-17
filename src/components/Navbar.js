@@ -1,17 +1,25 @@
 import { Link } from "react-router-dom";
-import "../styles/Navbar.css";
+import "./styles/Navbar.css";
 import { useRef } from "react";
 
-function Navbar() {
+function Navbar({ pages, urls, brandName }) {
   const linksRef = useRef();
 
   const onHamburgerClicked = (e) => {
     linksRef.current.classList.toggle("active");
   };
 
+  const renderLink = (page, i) => {
+    return (
+      <Link key={i} className="navbar-link" to={urls[i]}>
+        {page}
+      </Link>
+    );
+  };
+
   return (
     <nav className="navigation-bar">
-      <div className="brand-title">Brand Name</div>
+      <div className="brand-title">{brandName}</div>
 
       <button className="toggle-button" onClick={(e) => onHamburgerClicked(e)}>
         <span className="bar" />
@@ -20,12 +28,7 @@ function Navbar() {
       </button>
 
       <div ref={linksRef} className="navbar-links">
-        <Link className="navbar-link" to="/">
-          Home
-        </Link>
-        <Link className="navbar-link" to="/about">
-          About
-        </Link>
+        {pages.map((page, i) => renderLink(page, i))}
       </div>
     </nav>
   );

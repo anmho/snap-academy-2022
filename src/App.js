@@ -1,20 +1,25 @@
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import "./main.css";
 import Home from "./pages/Home.js";
 import About from "./pages/About.js";
 import Navbar from "./components/Navbar.js";
-import "./styles/main.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import Footer from "./components/Footer.js";
 
 function App() {
   return (
     <div>
       <Router>
-        <Navbar titles={["Home, About"]} />
+        <Navbar
+          pages={["Home", "About"]}
+          urls={["/", "/about"]}
+          brandName={"Tenkatori"}
+        />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
         </Routes>
-        <div className="Contact">Contact</div>
-        <div>Footer</div>
+        <Footer />
       </Router>
     </div>
   );
