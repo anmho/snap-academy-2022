@@ -11,12 +11,18 @@
   justify-content: center;
 }
 
+.home-image .container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 .greeting-text {
   display: flex;
   justify-content: center;
   font-family: Poppins, sans-serif;
   font-weight: bold;
-  font-size: 100px;
+  font-size: 6rem;
   color: white;
 }
 
@@ -28,4 +34,13 @@
 
 .order-buttons a {
   margin: 0.5rem;
+}
+
+@media (max-width: 480px) {
+  .greeting-text {
+    font-size: 2.5rem;
+  }
+  .order-button-text {
+    font-size: 1rem;
+  }
 }

@@ -22,17 +22,15 @@ i,
 
 .inner-footer {
   background-color: #023047;
-  display: flex;
+  display: grid;
   justify-content: center;
   flex-direction: column;
   color: #f1faee;
 }
 
 .locations {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .location-info {
@@ -43,4 +41,14 @@ i,
   display: flex;
   justify-content: center;
   margin: 3rem 0 3rem 0;
+}
+
+.subtitle {
+  margin: 1rem 0 1rem 0;
+}
+
+@media (max-width: 1200px) {
+  .locations {
+    display: inline;
+  }
 }

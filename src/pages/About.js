@@ -1,8 +1,9 @@
+import "./styles/About.css";
+
 function About() {
   return (
     <div className="container content">
       <h1>About</h1>
-      <button className="btn btn-primary">Order Now</button>
       <p>
         If you've followed the occasional Japanese food fairs at Marukai Market
         — which can include the appearance of a takoyaki chain from Osaka or a
