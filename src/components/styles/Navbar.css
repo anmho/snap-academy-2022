@@ -9,6 +9,8 @@
 .brand-title {
   font-size: 1.5rem;
   margin: 0.5rem;
+  font-family: Poppins;
+  font-weight: bolder;
 }
 
 .navbar-links {
@@ -61,7 +63,7 @@
     width: 100%;
   }
 
-  .navbar {
+  .navigation-bar {
     flex-direction: column;
     align-items: flex-start;
   }
