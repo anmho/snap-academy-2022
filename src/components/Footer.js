@@ -37,7 +37,6 @@ function Footer() {
 
       <div className="inner-footer">
         <h1 className="subtitle">LOCATIONS</h1>
-        {/* <div className="grid-col" /> */}
         <div className="locations container">
           <Map
             className="location-info"
@@ -62,7 +61,6 @@ function Footer() {
           This is an unofficial demo website made for Snap Engineering Academy
           2022
         </small>
-        {/* <div className="grid-col" /> */}
       </div>
     </footer>
   );
