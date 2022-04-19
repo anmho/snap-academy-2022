@@ -1,10 +1,11 @@
 import "./styles/MenuItem.css";
 
-function MenuItem({ name, imagePath }) {
+function MenuItem({item}) {
   return (
     <div className="menu-item">
-      <h3>{name}</h3>
-      <img src={imagePath} alt={name} />
+      <h3>{item.name}</h3>
+      <img src={`../images/${item.imagePath}`} alt={item.name} />
+      <p className="description">{item.description}</p>
     </div>
   );
 }
