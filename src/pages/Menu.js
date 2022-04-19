@@ -1,15 +1,6 @@
 import "./styles/Menu.css";
-// import MenuItem from "../components/MenuItem.js";
-import { useState, useEffect } from "react";
 
 function Menu() {
-  // const [items, setItems] = useState([]);
-
-  // useEffect(() => {
-
-  //   setItems(items);
-  // }, []);
-
   const items = [
     {
       name: "Karaage",
